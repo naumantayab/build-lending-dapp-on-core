@@ -17,7 +17,7 @@ module.exports = {
     }
   },
   solidity: {
-    version: "0.8.24",
+    version: "0.8.19",
     settings: {
       evmVersion: 'paris',
       optimizer: {
@@ -25,7 +25,7 @@ module.exports = {
         runs: 1000,
       },
     },
-  },  etherscan: {
-    apiKey: process.env.API_KEY, 
+  }, etherscan: {
+    apiKey: process.env.API_KEY,
   },
 };
