@@ -2,11 +2,11 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "D:\\Meta School\\build-lending-dapp-on-core\\contracts\\CoreLoanPlatform.sol": {
-      "lastModificationDate": 1723581137678,
-      "contentHash": "8b43620a60bdaa5b617db53cee6c156a",
+      "lastModificationDate": 1723629811659,
+      "contentHash": "d9508b0d75da8c3d6bad889597006df7",
       "sourceName": "contracts/CoreLoanPlatform.sol",
       "solcConfig": {
-        "version": "0.8.19",
+        "version": "0.8.24",
         "settings": {
           "evmVersion": "paris",
           "optimizer": {
@@ -29,9 +29,11 @@
           }
         }
       },
-      "imports": [],
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
       "versionPragmas": [
-        "^0.8.19"
+        "^0.8.24"
       ],
       "artifacts": [
         "CoreLoanPlatform"
@@ -42,7 +44,7 @@
       "contentHash": "80db794d01298f4dd63638bbd3389f9f",
       "sourceName": "contracts/HelloWorld.sol",
       "solcConfig": {
-        "version": "0.8.19",
+        "version": "0.8.24",
         "settings": {
           "evmVersion": "paris",
           "optimizer": {
@@ -71,6 +73,42 @@
       ],
       "artifacts": [
         "HelloWorld"
+      ]
+    },
+    "D:\\Meta School\\build-lending-dapp-on-core\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1723309519286,
+      "contentHash": "5517c8678c18eb1a8ba58810e7ca39ca",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC20"
       ]
     }
   }

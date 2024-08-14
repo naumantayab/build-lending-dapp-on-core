@@ -1,7 +1,13 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.24;
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 contract CoreLoanPlatform {
+    // Interfaces for ERC20 tokens
+    IERC20 public immutable USD;
+    IERC20 public immutable BTC;
+
+    // Loan Parameters (Immutable Constants)
     uint public constant COLLATERAL_RATIO = 150; // 150% collateralization
     uint256 public constant INTEREST_RATE = 5; // 5% interest rate
     uint256 public constant LOAN_DURATION = 30 days;
